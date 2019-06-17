@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import CreateLink from './CreateLink'
 import LinkList from './LinkList'
+import RootList from './RootList'
+import CreateRoot from './CreateRoot'
 import Header from './Header'
 import Login from './Login'
 import Search from './Search'
@@ -19,6 +21,8 @@ class App extends Component {
             <Route exact path='/search' component={Search} />
             <Route exact path='/top' component={LinkList} />
             <Route exact path='/new/:page' component={LinkList} />
+            <Route exact path='/roots' component={RootList} />
+            <Route exact path='/createRoot' component={CreateRoot} />
           </Switch>
         </div>
       </div>
